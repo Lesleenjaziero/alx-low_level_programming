@@ -1,19 +1,13 @@
 #include <stdio.h>
 
 /**
- * __attribute__ - specifier
+ * first - prints message before the main function
  *
- * @constructor: function constructor.
  * Return: 0
  */
 
-void __attribute__((constructor)) before_main()
+void __attribute__((constructor)) first()
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
-}
-
-int main(void)
-{
-    printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-    return (0);
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
